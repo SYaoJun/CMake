@@ -5,7 +5,7 @@
 ## 安装
 - install
 ## 测试
-- test
+- google test
 ## 输出位置
 - 设置prefix
 
