@@ -6,6 +6,8 @@
 - install
 ## 测试
 - google test
+- make test
+- test
 ## 输出位置
 - 设置prefix
 
