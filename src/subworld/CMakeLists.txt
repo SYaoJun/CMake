@@ -1,7 +1,0 @@
- # 查找当前目录下的所有源文件，并将名称保存到 DIR_SRCS 变量
- aux_source_directory(. DIR_world_SRCS)
- # 生成动态库
- add_library(my_world SHARED ${DIR_world_SRCS})
- # 头文件
- target_include_directories(my_world PUBLIC ../include)
-
