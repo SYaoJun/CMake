@@ -69,6 +69,20 @@ link_libraries(world)
 ```
 
 ---
+## 目录结构
+```shell
+src
+├── CMakeLists.txt
+├── libhello
+│   ├── CMakeLists.txt
+│   ├── hello.cpp
+│   └── hello.h
+├── main.cpp
+└── simple_test.cpp
+
+```
+
+---
 
 ## 致谢
 - 感谢大家的给我的建议！
