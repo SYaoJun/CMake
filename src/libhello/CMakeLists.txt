@@ -1,1 +1,1 @@
-add_library(hello SHARED hello.cpp hello.h)
+add_library(world SHARED hello.cpp hello.h)
