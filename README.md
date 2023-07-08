@@ -1,3 +1,4 @@
+> 教程里的文档是Lecture.md
 # CMake
 ## CMake概述
 - 开源
