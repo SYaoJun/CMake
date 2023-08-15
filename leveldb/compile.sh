@@ -1,1 +1,0 @@
-g++ -g -o test test.cpp -lleveldb -lpthread -std=c++14

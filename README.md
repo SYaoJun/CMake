@@ -1,15 +1,30 @@
 # C++ Project
 
-整理了一些 CMake 管理的 C++ demo 文件
+整理了一些常用开源库使用 CMake 管理的 Demo 代码
 
-## 编译安装
+## 编译
 
 ```
 # build是编译时创建的目录
 cd leveldb
 cmake -B build
 cmake --build build
+
+```
+
+## 安装
+
+```
 sudo cmake --install build
+```
+
+## 添加库文件
+
+```
+include_directories(/usr/local/include)
+find_library(LIBS  leveldb /usr/local/lib)
+add_executable(leveldb_test leveldb_test.cpp)
+target_link_libraries(leveldb_test ${LIBS})
 ```
 
 ## 常用命令
