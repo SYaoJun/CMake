@@ -1,6 +1,19 @@
 # C++ Project
-整理了一些CMake管理的C++ demo文件
-## CMake
+
+整理了一些 CMake 管理的 C++ demo 文件
+
+## 编译安装
+
+```
+# build是编译时创建的目录
+cd leveldb
+cmake -B build
+cmake --build build
+sudo cmake --install build
+```
+
+## 常用命令
+
 ```cmake
 add_library()
 target_link_library()
@@ -18,4 +31,3 @@ message()
 add_custom_target()
 
 ```
-

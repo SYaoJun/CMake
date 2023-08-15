@@ -1,1 +1,3 @@
-duckdb/build
+*/build/
+.idea/
+.vscode/

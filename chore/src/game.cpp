@@ -20,15 +20,30 @@
 #include <string.h>
 #include <stdlib.h>
 
+void buf_test(char **buf)
 
-int main() {
-    char buf[1024];
-    while (1) {
-        char *ret = gets(buf);
-        if (ret == NULL) {
-            break;
-        }
-        printf("str = %s\n", buf);
+{
+    char u[10] = "yaojun";
+    strcpy(buf[0], u);
+    printf("buf[0] = %s\n", buf[0]);
+}
+int main()
+{
+    const int LINE = 480000;
+    const int WORD_LEN = 10;
+    char **buf = (char **)malloc(LINE * sizeof(char *));
+    for (int i = 0; i < LINE; i++)
+    {
+        buf[i] = (char *)malloc(WORD_LEN * sizeof(char));
     }
+
+    buf_test(buf);
+
+    for (int i = 0; i < LINE; i++)
+    {
+        free(buf[i]);
+    }
+
+    free(buf);
     return 0;
 }
