@@ -1,9 +1,11 @@
 cmake_minimum_required(VERSION 3.16)
 project(catch_v3)
-set(CMAKE_CXX_STANDARD 14)
-include_directories(/Users/yaojun/MyInstall/catch_install/include)
-FIND_LIBRARY(CATCH2_LIBS Catch2 /Users/yaojun/MyInstall/catch_install/lib NO_DEFAULT_PATH)
-FIND_LIBRARY(CATCH2MAIN_LIBS Catch2Main /Users/yaojun/MyInstall/catch_install/lib NO_DEFAULT_PATH)
+set(CMAKE_CXX_STANDARD 17)
+
+include_directories(/usr/local/include/)
+find_library(CATCH2_LIBS Catch2 /Users/yaojun/MyInstall/catch_install/lib NO_DEFAULT_PATH)
+find_library(CATCH2MAIN_LIBS Catch2Main /Users/yaojun/MyInstall/catch_install/lib NO_DEFAULT_PATH)
+
 # hello
 add_executable(catch_v3 hello.cpp)
 target_link_libraries(catch_v3 ${CATCH2_LIBS} ${CATCH2MAIN_LIBS})
