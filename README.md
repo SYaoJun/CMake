@@ -3,7 +3,7 @@
 -   整理了一些使用`CMake`管理的样例代码，所有使用到的库都需要手动安装到本地，比如`leveldb`和`duckdb`。
 
 ## 可用样例列表
-
+- google_test
 -   leveldb
 -   duckdb
 -   arrow
@@ -12,7 +12,7 @@
 -   abseil
 
 ## 依赖说明
-
+- 第三方库需要先安装，建议安装到指定目录下，直接删除就相当于卸载，若安装时没指定安装目录，默认安装如下：
 -   所有头文件都放在`/usr/local/include`目录下
 -   所有静态库都放在`/usr/local/lib`目录下
 
@@ -25,7 +25,10 @@ cmake -B build
 cmake --build build
 
 ```
-
+## 指定安装路径
+```
+cmake -DCMAKE_INSTALL_PREFIX=/your/path ..
+```
 ## 安装
 
 ```
