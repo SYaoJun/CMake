@@ -1,24 +1,23 @@
-#include <assert.h>
-#include <string.h>
 #include <iostream>
+#include <cassert>
 #include "leveldb/db.h"
-
+#include "leveldb/write_batch.h"
 int main()
 {
-    leveldb::DB *db;
-    leveldb::Options options;
-
-    options.create_if_missing = true;
-    leveldb::Status status = leveldb::DB::Open(options, "testdb", &db);
+    // Open a database.
+    leveldb::DB* db;
+    leveldb::Options opts;
+    opts.create_if_missing = true;
+    leveldb::Status status = leveldb::DB::Open(opts, "testdb", &db);
     assert(status.ok());
 
-    std::string k1 = "name";
-
-    std::string v1 = "jim";
-
-    status = db->Put(leveldb::WriteOptions(), k1, v1);
+    // Write data.
+    status = db->Put(leveldb::WriteOptions(), "name", "yaojun");
     assert(status.ok());
-    std::cout << status.ok() << std::endl;
-    delete db;
-    return 0;
-}
+
+    // Read data.
+    std::string val;
+    status = db->Get(leveldb::ReadOptions(), "name", &val);
+    assert(status.ok());
+    std::cout << val << std::endl;
+   }
