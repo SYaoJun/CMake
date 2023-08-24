@@ -9,7 +9,7 @@
 -DCMAKE_INSTALL_PREFIX=/your/install/path
 -DCMAKE_CXX_STANDARD=11
 ```
-## 可用样例列表
+## 常用开源库
 - google_test
 -   leveldb
 -   duckdb
@@ -17,7 +17,8 @@
 -   crc
 -   catch2
 -   abseil
-
+- folly
+- spdlog
 ## 依赖说明
 - 第三方库需要先安装，建议安装到指定目录下，直接删除就相当于卸载，若安装时没指定安装目录，默认安装如下：
 -   所有头文件都放在`/usr/local/include`目录下
@@ -52,3 +53,15 @@ target_link_libraries(leveldb_test ${LIBS})
 ```
 ## fetch_content
 在Linux环境可以正常运行，在Mac环境存在链接错误
+## folly
+依赖库特别多，在Mac上直接使用homebrew安装
+```
+brew install folly
+```
+在使用folly时需要引入的库包括
+- boost
+- libevent
+- gflags
+- fmt
+- glog
+- double-conversion
