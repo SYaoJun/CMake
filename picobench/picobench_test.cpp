@@ -23,4 +23,4 @@ static void rand_vector_reserve(picobench::state& s) {
         v.push_back(rand());
     }
 }
-PICOBENCH(rand_vector_reserve).label("rand_vector_reserve").samples(2).iterations({100, 10000});;
+PICOBENCH(rand_vector_reserve).label("rand_vector_reserve").samples(2).iterations({100, 10000});
