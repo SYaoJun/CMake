@@ -1,0 +1,3 @@
+[submodule "import_external_project/spdlog"]
+	path = import_external_project/spdlog
+	url = git@gitee.com:roberchen/spdlog.git

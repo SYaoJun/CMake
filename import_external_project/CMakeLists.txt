@@ -1,0 +1,6 @@
+ cmake_minimum_required(VERSION 3.16)
+ project(spdlog_test)
+ set(CMAKE_CXX_STANDARD 17)
+ add_subdirectory(spdlog)
+ add_executable(spdlog_test spdlog_test.cpp)
+target_link_libraries(spdlog_test PRIVATE spdlog::spdlog)
