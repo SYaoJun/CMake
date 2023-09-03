@@ -9,7 +9,8 @@ ExternalProject_Add(
                     -DCMAKE_INSTALL_PREFIX=${SPDLOG_ROOT}
   BUILD_COMMAND cd ${SPDLOG_ROOT}/src/extern_spdlog && cmake --build build -j 8
   INSTALL_COMMAND cd ${SPDLOG_ROOT}/src/extern_spdlog && cmake --install build
-  BUILD_BYPRODUCTS ${SPDLOG_ROOT}/lib/libspdlog.a)
+  BUILD_BYPRODUCTS ${SPDLOG_ROOT}/lib/libspdlog.a
+  )
 # 指定编译好的静态库文件的路径 find_library(SPDLOG_LIBRARIES spdlog ${SPDLOG_ROOT}/lib/) #
 # 指定头文件所在的目录
 set(SPDLOG_INCLUDE_DIR ${SPDLOG_ROOT}/include)
