@@ -1,3 +1,4 @@
-[submodule "import_external_project/spdlog"]
-	path = import_external_project/spdlog
-	url = git@gitee.com:roberchen/spdlog.git
+
+[submodule "gtest/googletest"]
+	path = gtest/googletest
+	url = https://gitee.com/mirrors/googletest.git
