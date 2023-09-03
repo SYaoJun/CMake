@@ -1,9 +1,11 @@
 # CMake教程
 - 手把手教你使用C++玩转工程项目，学完后直接上手开源项目
 ## 课程大纲
-1. CMake管理单个文件
-2. CMake生成静/动态库
-3. CMake引用第三方库
-4. CMake交叉编译
+1. 单个文件
+2. 生成与使用库
+3. 引用第三方库
+4. 交叉编译
+5. 单元测试
+6. 编译优化
 ## 参考文件
 [CMake Cookbook](https://www.bookstack.cn/read/CMake-Cookbook/content-chapter1-1.2-chinese.md)
