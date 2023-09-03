@@ -2,17 +2,6 @@ cmake_minimum_required(VERSION 3.16)
 project(spdlog_test)
 set(CMAKE_CXX_STANDARD 17)
 
-# ##############################################################################
-# 采用添加submodules的方式引入项目     #
-# ##############################################################################
-
-# add_subdirectory(spdlog) add_executable(spdlog_test spdlog_test.cpp)
-# target_link_libraries(spdlog_test PRIVATE spdlog::spdlog)
-
-# ##############################################################################
-# 采用ExternalProject_Add的方式引入项目 #
-# ##############################################################################
-
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 include(spdlog)
 include_directories(${SPDLOG_INCLUDE_DIR})
