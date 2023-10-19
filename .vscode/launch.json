@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "my_src",
+            "type": "lldb",
+            "request": "launch",
+            "program": "/Users/yaojun/CMakeTutorial/build/src/my_src", 
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "make_1", 
+           
+        }
+    ]
+}
