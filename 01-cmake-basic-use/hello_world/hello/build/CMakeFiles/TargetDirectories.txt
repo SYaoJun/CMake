@@ -1,3 +1,0 @@
-/Users/yaojun/code/CMakeTutorial/01-cmake-basic-use/hello_world/hello/build/CMakeFiles/main.dir
-/Users/yaojun/code/CMakeTutorial/01-cmake-basic-use/hello_world/hello/build/CMakeFiles/edit_cache.dir
-/Users/yaojun/code/CMakeTutorial/01-cmake-basic-use/hello_world/hello/build/CMakeFiles/rebuild_cache.dir
