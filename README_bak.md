@@ -91,4 +91,3 @@ brew install folly
 ./picobench_test --output=report.txt
 ```
 
-test
