@@ -1,1 +1,0 @@
-g++ first.cpp catch.hpp -std=c++14
