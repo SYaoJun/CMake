@@ -1,0 +1,1 @@
+add_library(internal_add OBJECT add.cpp)
